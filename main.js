@@ -25,11 +25,8 @@
   let debugToggle = false;
 
   let loadDate = date => {
-    let now = moment(),
-      diff = moment.duration(moment(date).diff(moment(now)));
-
     downDate.innerHTML = 'It will be ' + moment(date).format("dddd, MMMM Do YYYY, h:mm:ss a");
-    downLeft.innerHTML = moment(date).from(moment(now)) + ' from now.';
+    downLeft.innerHTML = moment(date).fromNow() + ' from now.';
     downDiv.style.display = 'block';
   }
 

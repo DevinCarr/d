@@ -5,7 +5,9 @@ const urlsToCache = [
   'main.js',
   'moment.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/milligram/1.2.4/milligram.min.css',
-  'https://cdn.rawgit.com/mozilla/localForage/master/dist/localforage.js'
+  'https://cdn.rawgit.com/mozilla/localForage/master/dist/localforage.js',
+  'icon-512.png',
+  'icon-256.png'
 ];
 
 self.addEventListener('install', event => {

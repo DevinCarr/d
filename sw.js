@@ -1,8 +1,9 @@
 'use strict';
 const CACHE_NAME = 'd-cache-v1';
 const urlsToCache = [
-  '/',
-  '/main.js',
+  'index.html',
+  'main.js',
+  'moment.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/milligram/1.2.4/milligram.min.css',
   'https://cdn.rawgit.com/mozilla/localForage/master/dist/localforage.js'
 ];

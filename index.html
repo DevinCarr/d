@@ -11,33 +11,34 @@
     <link rel="canonical" href="https://devincarr.com"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.2.4/milligram.min.css">
     <script defer src="https://cdn.rawgit.com/mozilla/localForage/master/dist/localforage.js"></script>
+    <script defer src="moment.min.js"></script>
     <script defer src="main.js"></script>
     <title>Down - Devin Carr</title>
   </head>
   <body>
     <div class="container" style="text-align:center;padding-top:5%">
-      <div class="row">
+      <div class="row" id="dateFormDiv" style="display:none">
         <div class="column">
-         <h1 style="font-size:10.0rem" id="countText"></h1>
+          <form id="dateForm">
+            <fieldset>
+              <label style="color:#7fb6ff">Countdown Date:<br>
+                <input type="datetime-local" name="selectedDate">
+              </label>
+              <span style="display:none" id="invalidText"><small>Invalid input, please try a valid input</small></span>
+            </fieldset>
+          </form>
+          <button style="color:#7fb6ff" class="button button-clear" id="submitButton" href="#">Submit</button>
          </div>
       </div>
-      <div class="row">
-        <div class="column column-100">
-          <button style="width:25rem;height:15rem" id="moreButton">More</button>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column column-100">
-          <button style="width:25rem;height:10rem" id="lessButton">Less</button>
-        </div>
-      </div>
-      <div class="row" style="padding-top:5%">
+      <div class="row" id="downDiv">
         <div class="column">
-          <button id="resetButton">Reset</button>
+          <h3><span id="downDate"></span></h1>
+          <h3><span id="downLeft"></span></h3>
+          <button style="color:#7fb6ff" class="button button-clear" id="resetButton" href="#">New Countdown</button>
         </div>
       </div>
       <!-- Footer --> 
-      <div class="row" style="padding-top:15%;color:grey">
+      <div class="row" style="padding-top:10%;color:grey">
           <div class="column">
               <small id="secretButton">
                   Created by Devin Carr.

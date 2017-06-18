@@ -2,8 +2,8 @@
   "short_name": "Down",
   "name": "Down - Devin Carr",
   "display": "standalone",
-  "theme_color": "#9b4dca",
-  "background_color": "#9b4dca",
+  "theme_color": "#7fb6ff",
+  "background_color": "#7fb6ff",
   "start_url": "/",
   "icons": [
     {

@@ -71,10 +71,5 @@ module.exports = {
         }
       }
     ]
-  },
-  plugins: [
-    new webpack.ProvidePlugin({
-      moment: 'moment'
-    })
-  ]
+  }
 }

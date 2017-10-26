@@ -13,7 +13,7 @@ new Vue({
 
 // Setup Service Worker for PWA
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/service-worker.js').then(registration => {
+  navigator.serviceWorker.register('service-worker.js').then(registration => {
     // Registration was successful
   }, err => {
     // registration failed :(
